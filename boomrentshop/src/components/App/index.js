@@ -1,14 +1,21 @@
 import React from 'react'
-import Footer from '../Footer/'
-import VisibleTodoList from '../containers/VisibleTodoList'
-import Header from '../layout/header'
+import Header from '../Layout/header'
+import Home from '../Home/'
+
 import './style.css';
 
-const App = () => (
+const App = (props) => (
   <div className="">
     <Header />
     <div className="container" id="mainContainer">
-      
+     {(() => {
+        switch (props.location.pathname) {
+            case '/browse-items':
+                return 'Browse Items'
+            default :
+                return <Home />
+        }
+    })()}
     </div>
   </div>
 )
