@@ -1,0 +1,38 @@
+.browse-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: nowrap row;
+  -webkit-flex-flow: nowrap row;
+  margin: 0;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 992px) {
+  .browse-container {
+    font-size: 16px;
+  }
+}
+
+.browse-container .left-container {
+  width: 20%;
+  margin: 5px;
+}
+
+.left-container .cat-wrapper {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: wrap column;
+  -webkit-flex-flow: wrap column;
+}
+
+.left-container .cat-wrapper a {
+  margin: 5px 0;
+}
+
+.browse-container .center-container {
+  width: 60%;
+}
+
+.browse-container .right-container {
+  width: 20%;
+}

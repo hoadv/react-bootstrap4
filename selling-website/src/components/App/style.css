@@ -23,12 +23,18 @@
   to { transform: rotate(360deg); }
 }
 
-.main-container {
-}
-
-.header-container {
-}
-
 div#mainContainer {
     margin-top: 110px;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  flex-direction: column;
+ -webkit-flex-direction: column; /* Safari 6.1+ */
+}
+
+.body-wrapper {
+  flex: 1;
 }

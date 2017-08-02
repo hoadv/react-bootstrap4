@@ -1,0 +1,54 @@
+* {
+  font-family: brandon-grotesque, 'brandon grotesque', Helvetica, Arial;
+}
+
+body {
+  background-color: #fffcdc;
+}
+
+.home-container {
+  margin: 0 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  .home-container {
+    margin: 0 150px;
+  }
+}
+.slogan-wrapper {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: nowrap column;
+    -webkit-flex-flow: nowrap column;
+    padding-bottom: 0.7rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.main-content-wrapper {
+  margin: 50px 0px;
+}
+
+.slick-next:before, .slick-prev:before {
+    font-size: 20px;
+    line-height: 1;
+    color: #00558B;
+    opacity: .75;
+}
+
+.carousel-item-container .item-details-wrapper {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: nowrap column;
+    -webkit-flex-flow: nowrap column;
+    color: black;
+}
+
+.carousel-item-container .author {
+  font-size: 0.7em;
+}
+
+.carousel-item-container .production {
+    font-size: 0.8em;
+}
